@@ -36,7 +36,7 @@ jobs:
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
-          REPOSITORY_URI=<your-account-id>.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my-sample-service
+          REPOSITORY_URI=612304127751.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my-sample-service
           IMAGE_TAG=latest
           # Build Docker image
           docker build -t $REPOSITORY_URI:$IMAGE_TAG .
